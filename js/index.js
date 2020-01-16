@@ -40,3 +40,11 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let anchor = document.getElementsByTagName('a')
+anchor[0].append(siteContent['nav']["nav-item-1"])
+anchor[1].append(siteContent['nav']["nav-item-2"])
+anchor[2].append(siteContent['nav']["nav-item-3"])
+anchor[3].append(siteContent['nav']["nav-item-4"])
+anchor[4].append(siteContent['nav']["nav-item-5"])
+anchor[5].append(siteContent['nav']["nav-item-6"])
