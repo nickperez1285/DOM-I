@@ -48,3 +48,38 @@ anchor[2].append(siteContent['nav']["nav-item-3"])
 anchor[3].append(siteContent['nav']["nav-item-4"])
 anchor[4].append(siteContent['nav']["nav-item-5"])
 anchor[5].append(siteContent['nav']["nav-item-6"])
+
+
+document.querySelectorAll('h1')[0].innerText = siteContent["cta"]["h1"]
+document.getElementsByTagName('button')[0].innerText = siteContent["cta"]["button"]
+
+
+let img2 = document.getElementById('cta-img');
+img2.setAttribute('src',siteContent["cta"]["img-src"] )
+
+let main = siteContent["main-content"]
+
+
+document.querySelectorAll('h4')[0].innerText = main["features-h4"]
+document.querySelectorAll('p')[0].innerText =  main["features-content"]
+document.querySelectorAll('h4')[1].innerText = main["about-h4"]
+document.querySelectorAll('p')[1].innerText =  main["about-content"]
+
+let img3 = document.getElementById("middle-img");
+img3.setAttribute('src', main["middle-img-src"])
+
+document.querySelectorAll('h4')[2].innerText = main["services-h4"]
+document.querySelectorAll('p')[2].innerText = main["services-content"]
+document.querySelectorAll('h4')[3].innerText = main["product-h4"]
+document.querySelectorAll('p')[3].innerText = main["product-content"]
+document.querySelectorAll('h4')[4].innerText = main["vision-h4"]
+document.querySelectorAll('p')[4].innerText = main["vision-content"]
+
+
+let contact = siteContent["contact"]
+document.getElementsByClassName('contact')[0].children[0].innerText= contact["contact-h4"]
+document.getElementsByClassName('contact')[0].children[1].innerText= contact["address"]
+document.getElementsByClassName('contact')[0].children[2].innerText= contact["phone"]
+document.getElementsByClassName('contact')[0].children[3].innerText= contact["email"]
+document.getElementsByTagName('footer')[0].children[0].innerText = siteContent["footer"]["copyright"]
+
