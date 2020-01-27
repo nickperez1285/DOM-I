@@ -41,6 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// logo.onClick(alert('hi'))
+
 let anchor = document.getElementsByTagName('a')
 anchor[0].append(siteContent['nav']["nav-item-1"])
 anchor[1].append(siteContent['nav']["nav-item-2"])
@@ -58,8 +60,6 @@ let img2 = document.getElementById('cta-img');
 img2.setAttribute('src',siteContent["cta"]["img-src"] )
 
 let main = siteContent["main-content"]
-
-
 document.querySelectorAll('h4')[0].innerText = main["features-h4"]
 document.querySelectorAll('p')[0].innerText =  main["features-content"]
 document.querySelectorAll('h4')[1].innerText = main["about-h4"]
